@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: build-npm-action
+        uses: ankitasen-ubmainz/build-npm-action@v0.2
+            
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master
         with:
